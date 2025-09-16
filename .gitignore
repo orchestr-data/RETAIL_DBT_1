@@ -11,3 +11,4 @@ airflow.cfg
 airflow.db
 logs/
 *.log
+dag_processor_manager/
