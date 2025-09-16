@@ -1,5 +1,5 @@
-dbt-core>=1.7,<1.8
-dbt-snowflake>=1.7,<1.8
-apache-airflow-providers-snowflake>=5.1,<5.2
-apache-airflow-providers-amazon>=8.13,<8.14
-sqlparse>=0.5,<0.6
+dbt-core==1.7.8
+dbt-snowflake==1.7.2
+apache-airflow-providers-snowflake==5.1.1
+apache-airflow-providers-amazon==8.13.0
+sqlparse==0.5.1
