@@ -16,17 +16,17 @@ PIPELINE_CONFIGS = {
     },
     'products': {
         'glue_job': 'products_to_csv+gzip',
-        'needs_compression': True,  # Using compression for consistency in this project
+        'needs_compression': True,
         'staging_model': 'stg_products',
         'mart_model': 'dim_products',
-        'file_format': 'csv_gzip_format'  # All files are gzipped
+        'file_format': 'csv_gzip_format'
     },
     'stores': {
         'glue_job': 'stores_to_csv+gzip',
-        'needs_compression': True,  # Using compression for consistency in this project
+        'needs_compression': True,
         'staging_model': 'stg_stores',
         'mart_model': 'dim_stores',
-        'file_format': 'csv_gzip_format'  # All files are gzipped
+        'file_format': 'csv_gzip_format'
     },
     'sales': {
         'glue_job': 'sales_to_csv+gzip',
@@ -46,7 +46,7 @@ PIPELINE_CONFIGS = {
 
 def create_data_pipeline_dag(source_name, config):
     """
-    Factory function to create DAG for any data source
+    Factory function to create DAG for any data source with separated dbt execution
     """
     default_args = {
         'owner': 'data-team',
@@ -61,10 +61,10 @@ def create_data_pipeline_dag(source_name, config):
     dag = DAG(
         dag_id=f"{source_name}_data_pipeline",
         default_args=default_args,
-        description=f"{source_name.title()}: S3 → Glue ETL → Snowflake → dbt",
+        description=f"{source_name.title()}: S3 → Glue ETL → Snowflake → dbt (Docker)",
         schedule_interval="@daily",
         catchup=False,
-        tags=[source_name, "glue", "snowflake", "dbt"],
+        tags=[source_name, "glue", "snowflake", "dbt", "docker"],
     )
 
     with dag:
@@ -74,7 +74,7 @@ def create_data_pipeline_dag(source_name, config):
         # Step 1: Glue ETL job (all datasets use Glue in your project)
         glue_process = GlueJobOperator(
             task_id=f"glue_process_{source_name}_data",
-            job_name=config['glue_job'],  # Use your actual job names
+            job_name=config['glue_job'],
             aws_conn_id="aws_default",
             iam_role_name="GlueS3AccessRole"
         )
@@ -98,16 +98,40 @@ def create_data_pipeline_dag(source_name, config):
             do_xcom_push=True
         )
 
-        # Step 3: dbt staging
+        # Step 3: dbt staging (via Docker - no dependency conflicts!)
         dbt_staging = BashOperator(
             task_id=f"dbt_{source_name}_staging",
-            bash_command=f"cd /opt/airflow/dbt && dbt run --select {config['staging_model']}"
+            bash_command=f"""
+            docker run --rm \
+              -e DBT_PROFILES_DIR=/root/.dbt \
+              -e SNOWFLAKE_ACCOUNT={{{{ var.value.SNOWFLAKE_ACCOUNT }}}} \
+              -e SNOWFLAKE_USER={{{{ var.value.SNOWFLAKE_USER }}}} \
+              -e SNOWFLAKE_PASSWORD={{{{ var.value.SNOWFLAKE_PASSWORD }}}} \
+              -e SNOWFLAKE_DATABASE={{{{ var.value.SNOWFLAKE_DATABASE }}}} \
+              -e SNOWFLAKE_WAREHOUSE={{{{ var.value.SNOWFLAKE_WAREHOUSE }}}} \
+              -v /opt/airflow/dbt:/usr/app \
+              -w /usr/app \
+              dbt/dbt-snowflake:1.7.1 \
+              dbt run --select {config['staging_model']}
+            """
         )
 
-        # Step 4: dbt marts  
+        # Step 4: dbt marts (via Docker)
         dbt_marts = BashOperator(
             task_id=f"dbt_{source_name}_marts",
-            bash_command=f"cd /opt/airflow/dbt && dbt run --select {config['mart_model']}"
+            bash_command=f"""
+            docker run --rm \
+              -e DBT_PROFILES_DIR=/root/.dbt \
+              -e SNOWFLAKE_ACCOUNT={{{{ var.value.SNOWFLAKE_ACCOUNT }}}} \
+              -e SNOWFLAKE_USER={{{{ var.value.SNOWFLAKE_USER }}}} \
+              -e SNOWFLAKE_PASSWORD={{{{ var.value.SNOWFLAKE_PASSWORD }}}} \
+              -e SNOWFLAKE_DATABASE={{{{ var.value.SNOWFLAKE_DATABASE }}}} \
+              -e SNOWFLAKE_WAREHOUSE={{{{ var.value.SNOWFLAKE_WAREHOUSE }}}} \
+              -v /opt/airflow/dbt:/usr/app \
+              -w /usr/app \
+              dbt/dbt-snowflake:1.7.1 \
+              dbt run --select {config['mart_model']}
+            """
         )
 
         # End task
