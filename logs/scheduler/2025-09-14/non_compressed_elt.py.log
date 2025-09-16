@@ -853,3 +853,120 @@
 [2025-09-14T23:53:02.453+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:02.452+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
 [2025-09-14T23:53:02.457+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:02.457+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
 [2025-09-14T23:53:02.488+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.195 seconds
+[2025-09-14T23:53:33.108+0000] {processor.py:161} INFO - Started process (PID=1116) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:53:33.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:53:33.114+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.114+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:53:33.164+0000] {processor.py:840} INFO - DAG(s) 'refunds_data_pipeline', 'returns_data_pipeline', 'promotions_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:53:33.219+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.219+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:53:33.255+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.254+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:53:33.262+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.262+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:53:33.266+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.266+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:53:33.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.194 seconds
+[2025-09-14T23:54:03.870+0000] {processor.py:161} INFO - Started process (PID=1126) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:54:03.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:54:03.877+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:03.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:54:03.943+0000] {processor.py:840} INFO - DAG(s) 'promotions_data_pipeline', 'returns_data_pipeline', 'refunds_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:54:04.014+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.014+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:54:04.077+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.076+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:04.085+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.085+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:04.089+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.089+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:04.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.276 seconds
+[2025-09-14T23:54:34.754+0000] {processor.py:161} INFO - Started process (PID=1136) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:54:34.756+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:54:34.760+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:34.759+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:54:34.842+0000] {processor.py:840} INFO - DAG(s) 'returns_data_pipeline', 'promotions_data_pipeline', 'refunds_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:54:34.937+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:34.936+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:54:34.994+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:34.994+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:35.005+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:35.005+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:35.009+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:35.008+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:35.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.291 seconds
+[2025-09-14T23:55:05.674+0000] {processor.py:161} INFO - Started process (PID=1146) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:55:05.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:55:05.681+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.681+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:55:05.751+0000] {processor.py:840} INFO - DAG(s) 'returns_data_pipeline', 'promotions_data_pipeline', 'refunds_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:55:05.816+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.816+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:55:05.859+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.859+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:05.867+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.867+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:05.871+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.871+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:05.910+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.243 seconds
+[2025-09-14T23:55:36.410+0000] {processor.py:161} INFO - Started process (PID=1156) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:55:36.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:55:36.418+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:55:36.475+0000] {processor.py:840} INFO - DAG(s) 'promotions_data_pipeline', 'refunds_data_pipeline', 'returns_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:55:36.538+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.538+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:55:36.579+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.578+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:36.586+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.586+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:36.591+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.591+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:36.627+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.224 seconds
+[2025-09-14T23:56:07.176+0000] {processor.py:161} INFO - Started process (PID=1166) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:56:07.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:56:07.181+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.181+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:56:07.233+0000] {processor.py:840} INFO - DAG(s) 'promotions_data_pipeline', 'refunds_data_pipeline', 'returns_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:56:07.296+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.296+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:56:07.354+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.354+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:07.365+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.365+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:07.370+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.370+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:07.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.250 seconds
+[2025-09-14T23:56:37.963+0000] {processor.py:161} INFO - Started process (PID=1176) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:56:37.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:56:37.969+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:37.968+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:56:38.055+0000] {processor.py:840} INFO - DAG(s) 'promotions_data_pipeline', 'returns_data_pipeline', 'refunds_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:56:38.203+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.203+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:56:38.318+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.317+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:38.339+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.339+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:38.356+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.356+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:38.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.458 seconds
+[2025-09-14T23:57:09.032+0000] {processor.py:161} INFO - Started process (PID=1186) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:57:09.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:57:09.038+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:57:09.093+0000] {processor.py:840} INFO - DAG(s) 'returns_data_pipeline', 'refunds_data_pipeline', 'promotions_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:57:09.161+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.161+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:57:09.200+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.200+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:09.208+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.208+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:09.212+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.212+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:09.254+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.228 seconds
+[2025-09-14T23:57:39.733+0000] {processor.py:161} INFO - Started process (PID=1196) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:57:39.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:57:39.740+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.739+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:57:39.805+0000] {processor.py:840} INFO - DAG(s) 'refunds_data_pipeline', 'promotions_data_pipeline', 'returns_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:57:39.881+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.880+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:57:39.938+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.937+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:39.953+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.952+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:39.960+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.960+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:40.008+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.286 seconds
+[2025-09-14T23:58:10.590+0000] {processor.py:161} INFO - Started process (PID=1206) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:58:10.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:58:10.597+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.596+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:58:10.647+0000] {processor.py:840} INFO - DAG(s) 'refunds_data_pipeline', 'promotions_data_pipeline', 'returns_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:58:10.704+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.704+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:58:10.743+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.743+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:10.750+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.750+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:10.756+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.755+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:10.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.201 seconds
+[2025-09-14T23:58:41.360+0000] {processor.py:161} INFO - Started process (PID=1216) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:58:41.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:58:41.366+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.365+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:58:41.416+0000] {processor.py:840} INFO - DAG(s) 'returns_data_pipeline', 'refunds_data_pipeline', 'promotions_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:58:41.473+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.472+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:58:41.511+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.511+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:41.519+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.519+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:41.523+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.522+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:41.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.198 seconds
+[2025-09-14T23:59:12.147+0000] {processor.py:161} INFO - Started process (PID=1226) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:59:12.150+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:59:12.154+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.153+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:59:12.207+0000] {processor.py:840} INFO - DAG(s) 'refunds_data_pipeline', 'returns_data_pipeline', 'promotions_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:59:12.264+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.264+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:59:12.301+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.301+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:12.308+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.308+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:12.312+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.312+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:12.350+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.209 seconds
+[2025-09-14T23:59:42.941+0000] {processor.py:161} INFO - Started process (PID=1236) to work on /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:59:42.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/non_compressed_elt.py for tasks to queue
+[2025-09-14T23:59:42.948+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:42.948+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:59:43.006+0000] {processor.py:840} INFO - DAG(s) 'promotions_data_pipeline', 'returns_data_pipeline', 'refunds_data_pipeline' retrieved from /opt/airflow/dags/non_compressed_elt.py
+[2025-09-14T23:59:43.064+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.064+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2025-09-14T23:59:43.102+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.102+0000] {dag.py:3823} INFO - Setting next_dagrun for promotions_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:43.110+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.110+0000] {dag.py:3823} INFO - Setting next_dagrun for refunds_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:43.115+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.114+0000] {dag.py:3823} INFO - Setting next_dagrun for returns_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:43.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/non_compressed_elt.py took 0.224 seconds

@@ -3089,3 +3089,146 @@
 [2025-09-14T23:53:02.501+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:02.501+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
 [2025-09-14T23:53:02.505+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:02.505+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
 [2025-09-14T23:53:02.535+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.222 seconds
+[2025-09-14T23:53:33.122+0000] {processor.py:161} INFO - Started process (PID=1119) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:53:33.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:53:33.128+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.127+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:53:33.186+0000] {processor.py:840} INFO - DAG(s) 'stores_data_pipeline', 'sales_data_pipeline', 'products_data_pipeline', 'customers_data_pipeline', 'shipments_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:53:33.251+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.250+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:53:33.288+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.288+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:53:33.296+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.296+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:53:33.301+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.300+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:53:33.305+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.305+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:53:33.309+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:53:33.309+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:53:33.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.223 seconds
+[2025-09-14T23:54:03.896+0000] {processor.py:161} INFO - Started process (PID=1129) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:54:03.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:54:03.904+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:03.903+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:54:03.982+0000] {processor.py:840} INFO - DAG(s) 'sales_data_pipeline', 'customers_data_pipeline', 'products_data_pipeline', 'stores_data_pipeline', 'shipments_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:54:04.085+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.084+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:54:04.135+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.135+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:54:04.148+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.147+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:04.153+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.153+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:04.158+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.158+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:04.164+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:04.164+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:04.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.326 seconds
+[2025-09-14T23:54:34.770+0000] {processor.py:161} INFO - Started process (PID=1139) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:54:34.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:54:34.778+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:34.777+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:54:34.882+0000] {processor.py:840} INFO - DAG(s) 'products_data_pipeline', 'customers_data_pipeline', 'shipments_data_pipeline', 'sales_data_pipeline', 'stores_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:54:34.985+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:34.984+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:54:35.032+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:35.032+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:54:35.040+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:35.040+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:35.045+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:35.045+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:35.049+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:35.049+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:35.053+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:54:35.053+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:54:35.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.319 seconds
+[2025-09-14T23:55:05.692+0000] {processor.py:161} INFO - Started process (PID=1149) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:55:05.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:55:05.698+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.697+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:55:05.781+0000] {processor.py:840} INFO - DAG(s) 'customers_data_pipeline', 'stores_data_pipeline', 'sales_data_pipeline', 'shipments_data_pipeline', 'products_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:55:05.857+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.857+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:55:05.899+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.899+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:55:05.910+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.910+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:05.915+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.914+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:05.920+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.919+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:05.924+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:05.924+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:05.957+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.270 seconds
+[2025-09-14T23:55:36.429+0000] {processor.py:161} INFO - Started process (PID=1159) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:55:36.431+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:55:36.435+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.434+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:55:36.494+0000] {processor.py:840} INFO - DAG(s) 'stores_data_pipeline', 'products_data_pipeline', 'shipments_data_pipeline', 'sales_data_pipeline', 'customers_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:55:36.565+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.564+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:55:36.609+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.608+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:55:36.618+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.618+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:36.621+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.621+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:36.625+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.625+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:36.629+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:55:36.629+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:55:36.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.242 seconds
+[2025-09-14T23:56:07.185+0000] {processor.py:161} INFO - Started process (PID=1169) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:56:07.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:56:07.190+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.189+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:56:07.252+0000] {processor.py:840} INFO - DAG(s) 'products_data_pipeline', 'customers_data_pipeline', 'shipments_data_pipeline', 'stores_data_pipeline', 'sales_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:56:07.338+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.338+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:56:07.391+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.390+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:56:07.401+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.401+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:07.405+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.405+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:07.411+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.411+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:07.417+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:07.417+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:07.457+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.277 seconds
+[2025-09-14T23:56:37.981+0000] {processor.py:161} INFO - Started process (PID=1179) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:56:37.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:56:37.990+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:37.989+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:56:38.111+0000] {processor.py:840} INFO - DAG(s) 'customers_data_pipeline', 'shipments_data_pipeline', 'stores_data_pipeline', 'sales_data_pipeline', 'products_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:56:38.325+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.324+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:56:38.414+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.414+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:56:38.429+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.429+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:38.434+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.434+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:38.443+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.443+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:38.448+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:56:38.448+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:56:38.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.518 seconds
+[2025-09-14T23:57:09.043+0000] {processor.py:161} INFO - Started process (PID=1189) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:57:09.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:57:09.049+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:57:09.105+0000] {processor.py:840} INFO - DAG(s) 'products_data_pipeline', 'shipments_data_pipeline', 'stores_data_pipeline', 'sales_data_pipeline', 'customers_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:57:09.185+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.185+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:57:09.223+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.223+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:57:09.230+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.230+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:09.234+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.233+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:09.237+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.236+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:09.240+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:09.240+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:09.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.233 seconds
+[2025-09-14T23:57:39.749+0000] {processor.py:161} INFO - Started process (PID=1199) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:57:39.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:57:39.757+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.756+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:57:39.833+0000] {processor.py:840} INFO - DAG(s) 'products_data_pipeline', 'shipments_data_pipeline', 'sales_data_pipeline', 'stores_data_pipeline', 'customers_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:57:39.920+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.920+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:57:39.997+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:39.996+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:57:40.012+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:40.012+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:40.022+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:40.022+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:40.029+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:40.028+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:40.036+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:57:40.035+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:57:40.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.340 seconds
+[2025-09-14T23:58:10.606+0000] {processor.py:161} INFO - Started process (PID=1209) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:58:10.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:58:10.612+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.611+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:58:10.666+0000] {processor.py:840} INFO - DAG(s) 'stores_data_pipeline', 'sales_data_pipeline', 'shipments_data_pipeline', 'customers_data_pipeline', 'products_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:58:10.736+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.736+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:58:10.775+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.775+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:58:10.782+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.782+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:10.786+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.786+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:10.791+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.791+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:10.796+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:10.795+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:10.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.226 seconds
+[2025-09-14T23:58:41.373+0000] {processor.py:161} INFO - Started process (PID=1219) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:58:41.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:58:41.378+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:58:41.436+0000] {processor.py:840} INFO - DAG(s) 'shipments_data_pipeline', 'stores_data_pipeline', 'customers_data_pipeline', 'products_data_pipeline', 'sales_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:58:41.501+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.501+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:58:41.541+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.540+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:58:41.548+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.548+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:41.552+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.551+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:41.556+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.556+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:41.561+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:58:41.560+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:58:41.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.223 seconds
+[2025-09-14T23:59:12.165+0000] {processor.py:161} INFO - Started process (PID=1229) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:59:12.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:59:12.170+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.169+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:59:12.230+0000] {processor.py:840} INFO - DAG(s) 'sales_data_pipeline', 'stores_data_pipeline', 'shipments_data_pipeline', 'products_data_pipeline', 'customers_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:59:12.295+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.295+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:59:12.331+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.331+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:59:12.338+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.338+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:12.342+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.342+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:12.346+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.346+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:12.350+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:12.350+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:12.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.222 seconds
+[2025-09-14T23:59:42.956+0000] {processor.py:161} INFO - Started process (PID=1239) to work on /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:59:42.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compressed_elt.py for tasks to queue
+[2025-09-14T23:59:42.963+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:42.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:59:43.027+0000] {processor.py:840} INFO - DAG(s) 'customers_data_pipeline', 'stores_data_pipeline', 'shipments_data_pipeline', 'sales_data_pipeline', 'products_data_pipeline' retrieved from /opt/airflow/dags/compressed_elt.py
+[2025-09-14T23:59:43.095+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.094+0000] {dag.py:3036} INFO - Sync 5 DAGs
+[2025-09-14T23:59:43.136+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.136+0000] {dag.py:3823} INFO - Setting next_dagrun for customers_data_pipeline to 2025-09-14 00:00:00+00:00, run_after=2025-09-15 00:00:00+00:00
+[2025-09-14T23:59:43.143+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.143+0000] {dag.py:3823} INFO - Setting next_dagrun for products_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:43.146+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.146+0000] {dag.py:3823} INFO - Setting next_dagrun for sales_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:43.150+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.150+0000] {dag.py:3823} INFO - Setting next_dagrun for shipments_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:43.154+0000] {logging_mixin.py:188} INFO - [2025-09-14T23:59:43.154+0000] {dag.py:3823} INFO - Setting next_dagrun for stores_data_pipeline to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-14T23:59:43.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compressed_elt.py took 0.234 seconds
