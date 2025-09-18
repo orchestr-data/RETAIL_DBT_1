@@ -1,7 +1,2 @@
-# Airflow providers
 apache-airflow-providers-snowflake==5.1.1
-apache-airflow-providers-amazon==9.13.0
-
-# dbt
-dbt-core==1.7.8
-dbt-snowflake==1.7.1
+apache-airflow-providers-amazon==8.29.0
