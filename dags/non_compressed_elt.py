@@ -41,7 +41,7 @@ def create_direct_load_dag(source_name, config):
         dag_id=f"{source_name}_data_pipeline",
         default_args=default_args,
         description=f"{source_name.title()}: S3 → Snowflake → dbt Docker (Direct Load)",
-        schedule_interval="@daily",
+        schedule="@daily",
         catchup=False,
         tags=[source_name, "snowflake", "dbt", "direct-load", "docker"],
     )

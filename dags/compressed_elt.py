@@ -62,7 +62,7 @@ def create_data_pipeline_dag(source_name, config):
         dag_id=f"{source_name}_data_pipeline",
         default_args=default_args,
         description=f"{source_name.title()}: S3 → Glue ETL → Snowflake → dbt (Docker)",
-        schedule_interval="@daily",
+        schedule="@daily",
         catchup=False,
         tags=[source_name, "glue", "snowflake", "dbt", "docker"],
     )
