@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customers details model"
+    columns:
+      - name: return_id
+      - name: transaction_id
+      - name: reason_code
+      - name: resolution_status
+      - name: return_date
+      - name: resolved_date
+      - name: days_to_resolve
+      - name: return_category
+      - name: processing_speed
+      - name: is_overdue_return
+      - name: return_count
+      - name: etl_loaded_at

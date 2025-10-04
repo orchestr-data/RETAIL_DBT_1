@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RETAIL_PROJECT
+    schema: RAW
+    tables:
+      - name: customers
+      - name: products
+      - name: promotions
+      - name: refunds
+      - name: returns
+      - name: sales
+      - name: shipments
+      - name: stores

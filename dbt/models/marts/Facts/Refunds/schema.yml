@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customers details model"
+    columns:
+      - name: payment_id
+      - name: transaction_id
+      - name: refund_method
+      - name: refund_status
+      - name: refund_flag
+      - name: refund_amount
+      - name: refund_timestamp
+      - name: refund_age_days
+      - name: refund_greater_than_100
+      - name: refund_method_category
+      - name: refund_count
+      - name: etl_loaded_at

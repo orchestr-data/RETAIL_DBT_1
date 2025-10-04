@@ -1,0 +1,36 @@
+name: 'retail_project'
+version: '1.0.0'
+
+# Which profile this project uses
+profile: 'retail_project'
+
+# Paths for dbt to look for different types of files
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+models:
+  retail_project:
+    raw:                     # models/raw/*
+      +schema: raw
+      +materialized: view    # sources or minimal transformations
+
+    staging:                 # models/staging/*
+      +schema: staging
+      +materialized: view    # curated / cleaned layer
+
+    marts:                   # models/marts/*
+      +schema: marts
+      +materialized: table   # final business marts (facts/dims)
+
+    metrics:                 # models/metrics/*
+      +schema: metrics
+      +materialized: table   # business metric

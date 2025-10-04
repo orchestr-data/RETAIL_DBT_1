@@ -1,31 +1,5 @@
 version: '3.8'
 
-x-airflow-common: &airflow-common
-  image: apache/airflow:2.8.1-python3.11
-  environment:
-    AIRFLOW__CORE__EXECUTOR: LocalExecutor
-    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
-    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-    # AWS creds (replace with real values or use .env file)
-    AWS_ACCESS_KEY_ID: ${aws_access_key}
-    AWS_SECRET_ACCESS_KEY: ${aws_secret_key}
-    AWS_DEFAULT_REGION: us-east-1
-    # Snowflake creds
-    SNOWFLAKE_ACCOUNT: ${snowflake_account}
-    SNOWFLAKE_USER: ${snowflake_user}
-    SNOWFLAKE_PASSWORD: ${snowflake_password}
-    SNOWFLAKE_DATABASE: RETAIL_PROJECT
-    SNOWFLAKE_WAREHOUSE: COMPUTE_WH
-  volumes:
-    - ./dags:/opt/airflow/dags
-    - ./dbt:/opt/airflow/dbt
-    - ./logs:/opt/airflow/logs
-    - ./requirements.txt:/requirements.txt
-  user: "${AIRFLOW_UID:-50000}:0"
-  depends_on:
-    postgres:
-      condition: service_healthy
-
 services:
   postgres:
     image: postgres:13
@@ -33,43 +7,63 @@ services:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
-    ports:
-      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 10s
       retries: 5
-      start_period: 5s
 
   airflow-init:
-    <<: *airflow-common
-    entrypoint: >
-      bash -c "
-        pip install --no-cache-dir -r /requirements.txt &&
-        airflow db init &&
-        airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com
-      "
+    image: apache/airflow:2.8.1-python3.11
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: 'YlCImzjge_TeZc8jGQCD8LF5et7y_QxHzI9bFOeVOFE='
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     depends_on:
       postgres:
         condition: service_healthy
+    volumes:
+      - C:/Users/user/retail-airflow-project/airflow/dags:/opt/airflow/dags
+      - C:/Users/user/retail-airflow-project/airflow/dags:/opt/airflow/logs
+    command: >
+      bash -c "
+        airflow db init &&
+        airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com
+      "
 
   airflow-webserver:
-    <<: *airflow-common
-    command: webserver
+    image: apache/airflow:2.8.1-python3.11
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: 'YlCImzjge_TeZc8jGQCD8LF5et7y_QxHzI9bFOeVOFE='
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     ports:
       - "8080:8080"
+    volumes:
+      - C:/Users/user/retail-airflow-project/airflow/dags:/opt/airflow/dags
+      - C:/Users/user/retail-airflow-project/airflow/logs:/opt/airflow/logs
     depends_on:
       airflow-init:
         condition: service_completed_successfully
+    command: airflow webserver
 
   airflow-scheduler:
-    <<: *airflow-common
-    command: scheduler
+    image: apache/airflow:2.8.1-python3.11
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: 'YlCImzjge_TeZc8jGQCD8LF5et7y_QxHzI9bFOeVOFE='
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    volumes:
+      - C:/Users/user/retail-airflow-project/airflow/dags:/opt/airflow/dags
+      - C:/Users/user/retail-airflow-project/airflow/logs:/opt/airflow/logs
     depends_on:
       airflow-init:
         condition: service_completed_successfully
+    command: airflow scheduler
 
 volumes:
   postgres_data:

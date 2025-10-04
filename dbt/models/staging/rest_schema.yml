@@ -1,0 +1,83 @@
+
+version: 2
+
+models:
+  - name: stg_products
+    description: "Products details model"
+    columns:
+      - name: product_id
+      - name: name
+      - name: category
+      - name: price
+      - name: created_at
+      - name: etl_loaded_at
+
+  - name: stg_refunds
+    description: "Refunds details model"
+    columns:
+      - name: payment_id
+      - name: transaction_id
+      - name: refund_method
+      - name: refund_status
+      - name: refund_amount
+      - name: refund_flag
+      - name: refund_timestamp
+      - name: etl_loaded_at
+
+
+  - name: stg_returns
+    description: "Returns details model"
+    columns:
+      - name: return_id
+      - name: transaction_id
+      - name: reason_code
+      - name: return_date
+      - name: resolution_status
+      - name: resolved_date
+      - name: etl_loaded_at
+
+  - name: stg_sales
+    description: "Sales details model"
+    columns:
+      - name: sale_id
+      - name: store_id
+      - name: product_id
+      - name: cust_id
+      - name: sale_date
+      - name: quantity
+      - name: total_sale_amount
+      - name: etl_loaded_at
+
+  - name: stg_shipments
+    description: "Shipments details model"
+    columns:
+      - name: shipment_id
+      - name: order_id
+      - name: product_id
+      - name: from_warehouse
+      - name: to_store
+      - name: ship_date
+      - name: arrival_date
+      - name: etl_loaded_at
+
+  - name: stg_stores
+    description: "Stores details model"
+    columns:
+      - name: store_id
+      - name: location
+      - name: region
+      - name: store_manager
+      - name: open_date
+      - name: store_type
+      - name: etl_loaded_at
+
+  - name: stg_promotions
+    description: "Promotion details model"
+    columns:
+      - name: promotion_id
+      - name: promotion_type
+      - name: product_scope
+      - name: discount_type
+      - name: start_date
+      - name: end_date
+      - name: etl_loaded_at

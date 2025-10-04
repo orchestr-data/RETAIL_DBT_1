@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: dim_products
+    description: "Products details model"
+    columns:
+      - name: product_id
+      - name: product_name
+      - name: product_category
+      - name: price
+      - name: created_at
+      - name: price_tier
+      - name: product_age_group
+      - name: etl_loaded_at

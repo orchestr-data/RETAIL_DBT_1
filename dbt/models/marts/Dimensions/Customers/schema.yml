@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customers details model"
+    columns:
+      - name: customer_id
+      - name: name
+      - name: email
+      - name: phone
+      - name: dob
+      - name: age
+      - name: gender
+      - name: signup_date
+      - name: cust_status
+      - name: address
+      - name: city
+      - name: state
+      - name: country
+      - name: postal_code
+      - name: loyalty_tier
+      - name: pref_pay_method
+      - name: market_opt_in
+      - name: channel
+      - name: last_login
+      - name: customer_tenure_days
+      - name: days_since_last_login
+      - name: customer_activity_status
+      - name: etl_loaded_at

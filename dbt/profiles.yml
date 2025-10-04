@@ -1,0 +1,14 @@
+retail_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "**********"        
+      user: "*********"              
+      password: "**********"     
+      role: "ACCOUNTADMIN"                 
+      warehouse: "COMPUTE_WH"
+      database: "RETAIL_PROJECT"
+      schema: "RAW"                    
+      threads: 4
+      client_session_keep_alive: False

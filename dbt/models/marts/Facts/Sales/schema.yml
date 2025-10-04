@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customers details model"
+    columns:
+      - name: sale_id
+      - name: store_id
+      - name: product_id
+      - name: customer_id
+      - name: sale_date
+      - name: quantity
+      - name: total_sale_amount
+      - name: sale_amount_tier
+      - name: purchase_type
+      - name: etl_loaded_at

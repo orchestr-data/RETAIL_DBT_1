@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customers details model"
+    columns:
+      - name: shipment_id
+      - name: order_id
+      - name: product_id
+      - name: from_warehouse
+      - name: to_store
+      - name: ship_date
+      - name: arrival_date
+      - name: shipping_duration_days
+      - name: shipping_speed_category
+      - name: is_delayed_shipment
+      - name: shipment_status
+      - name: etl_loaded_at

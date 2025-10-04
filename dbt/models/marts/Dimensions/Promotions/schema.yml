@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: dim_promotions
+    description: "Promotions details model"
+    columns:
+      - name: promotion_id
+      - name: promotion_type
+      - name: product_scope
+      - name: discount_type
+      - name: start_date
+      - name: end_date
+      - name: Promo_status
+      - name: promo_duration_days
+      - name: promo_duration_category
+      - name: etl_loaded_at
